@@ -5,56 +5,96 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portafolio personal de desarrollo web y diseño UX." />
-    <title>Portafolio | Web Developer &amp; UX Designer</title>
+    <title>Jesús Ulises | UX Designer &amp; Web Developer</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/site.css" />
 </head>
 <body>
     <a class="visually-hidden-focusable" href="#inicio">Ir al contenido</a>
-    <header class="border-bottom border-secondary">
-        <nav class="container d-flex flex-wrap align-items-center justify-content-between gap-2 py-3" aria-label="Navegación principal">
-            <a class="fw-bold text-white text-decoration-none" href="#inicio">Mi portafolio</a>
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#sobre-mi">Sobre mí</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Proyectos</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+    <header class="portfolio-header">
+        <nav aria-label="Navegación principal">
+            <ul class="hero-nav">
+                <li><a href="#sobre-mi">ABOUT</a></li>
+                <li aria-hidden="true">/</li>
+                <li><a href="#proyectos">WORK</a></li>
+                <li aria-hidden="true">/</li>
+                <li><a href="#contacto">CONTACT</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="inicio" class="portfolio-section" aria-labelledby="inicio-titulo">
-            <div class="container">
-                <p class="text-uppercase text-white-50">Desarrollo web · Diseño UX</p>
-                <h1 id="inicio-titulo" class="display-3 fw-bold">Web Developer<br />&amp; UX Designer</h1>
-                <p class="lead mt-4">Un espacio para compartir mis páginas web y mi proceso de diseño.</p>
-                <a class="btn btn-outline-light mt-3" href="#proyectos">Explorar proyectos</a>
+        <section id="inicio" class="portfolio-section hero" aria-labelledby="inicio-titulo">
+            <div class="hero-intro">
+                <h1 id="inicio-titulo">Jesús Ulises</h1>
+                <p>UX Designer / Web Developer</p>
             </div>
+            <a class="hero-scroll" href="#sobre-mi" aria-label="Scroll Down: ir a Sobre mí">
+                <img class="hero-fish" src="/resources/hero-fish.png" alt="" width="483" height="212" />
+                <span class="hero-scroll-label">Scroll Down<span class="hero-scroll-arrow" aria-hidden="true">V</span></span>
+            </a>
         </section>
-        <section id="sobre-mi" class="portfolio-section" aria-labelledby="sobre-mi-titulo">
-            <div class="container">
-                <h2 id="sobre-mi-titulo" class="display-5 fw-bold">Sobre mí</h2>
-                <p class="lead">El perfil detrás de los proyectos.</p>
-                <p class="text-white-50">Aquí compartiré mi trayectoria, habilidades y enfoque de trabajo.</p>
-            </div>
-        </section>
-        <section id="proyectos" class="portfolio-section" aria-labelledby="proyectos-titulo">
-            <div class="container">
-                <h2 id="proyectos-titulo" class="display-5 fw-bold">Proyectos</h2>
-                <p class="lead">Páginas web y experiencias digitales.</p>
-                <div class="border rounded p-4 mt-4">
-                    <p class="mb-0 text-white-50">Próximamente: proyectos, capturas y enlaces a cada sitio.</p>
+        <section id="sobre-mi" class="portfolio-section about" aria-labelledby="sobre-mi-titulo">
+            <div class="about-grid">
+                <figure class="about-figure">
+                    <img src="/resources/balandra.png" alt="El hongo de Balandra ilustrado en amarillo" width="642" height="557" />
+                    <figcaption>Balandra, La Paz B.C.S.</figcaption>
+                </figure>
+                <div class="about-copy" lang="en">
+                    <h2 id="sobre-mi-titulo">About Me</h2>
+                    <p>Experience Design leader with a rich synthesis of digital ecosystems, physical products and emerging technologies.</p>
+                    <p>Driven by a deep commitment to human-centred principles, I define problem spaces and translate ambiguity into future-facing concepts. I explore Speculative Design with a pragmatic, hands-on mentality</p>
                 </div>
             </div>
+            <a class="about-work" href="#proyectos" aria-label="Work: ir a Proyectos">Work<span aria-hidden="true">V</span></a>
         </section>
-        <section id="contacto" class="portfolio-section" aria-labelledby="contacto-titulo">
-            <div class="container">
-                <h2 id="contacto-titulo" class="display-5 fw-bold">Contacto</h2>
-                <p class="lead">Conversemos sobre tu próximo proyecto.</p>
-                <p class="mb-0">Próximamente: correo electrónico y perfiles profesionales.</p>
+        <section id="proyectos" class="portfolio-section projects" aria-labelledby="proyectos-titulo">
+            <h2 id="proyectos-titulo" lang="en">My Work</h2>
+            <p class="projects-subtitle" lang="en">Just a taste of my design and development experience</p>
+            <div class="project-gallery" aria-label="Ejemplos de proyectos">
+                <div class="projects-hint" aria-hidden="true">
+                    <img src="/resources/hover-arrow.svg" alt="" />
+                    <span>Hover</span>
+                </div>
+                <button class="project-panel" type="button" aria-label="Ver Project manager" aria-expanded="false">
+                    <img src="/resources/Page1.png" alt="Página de inicio de Project manager" />
+                    <span class="project-caption" lang="en">Complete web page development</span>
+                    <span class="project-name">Project manager*</span>
+                </button>
+                <button class="project-panel" type="button" aria-label="Ver Live Guard Tech" aria-expanded="false">
+                    <img src="/resources/Page2.png" alt="Página de inicio de Live Guard Tech" />
+                    <span class="project-caption">Live Guard Tech</span>
+                </button>
+                <button class="project-panel" type="button" aria-label="Ver NAMIL" aria-expanded="false">
+                    <img src="/resources/Page3.png" alt="Página de inicio de NAMIL" />
+                    <span class="project-caption">NAMIL</span>
+                </button>
+                <button class="project-panel" type="button" aria-label="Ver Ubica-Tec" aria-expanded="false">
+                    <img src="/resources/Page4.png" alt="Pantallas de la aplicación Ubica-Tec" />
+                    <span class="project-caption">Ubica-Tec</span>
+                </button>
+            </div>
+        </section>
+        <section id="contacto" class="portfolio-section contact" aria-labelledby="contacto-titulo">
+            <img class="contact-fish" src="/resources/contact-fish.png" alt="" />
+            <h2 id="contacto-titulo" lang="en"><span>WANNA</span>CONTACT ME?</h2>
+            <div class="contact-details">
+                <p class="contact-intro" lang="en">I’ll be glad to work together and help <strong>You</strong> define the future of your website.</p>
+                <address class="contact-channels">
+                    <a href="mailto:uliwrok@gmail.com"><span class="contact-email-icon"><img src="/resources/contact-email.svg" alt="" /></span><span>uliwrok@gmail.com</span></a>
+                    <a href="tel:+526121984324"><span class="contact-phone-icon"><img src="/resources/contact-phone.svg" alt="" /></span><span>+52 612-198-4324</span></a>
+                </address>
+                <div class="contact-resumes" aria-label="Currículum">
+                    <span lang="en">English Resume</span>
+                    <span>Curriculum Español</span>
+                </div>
+                <div class="contact-socials">
+                    <a class="contact-social-link" href="" aria-label="LinkedIn"><span class="social-icon"><img src="/resources/linkedin.svg" alt="" /></span></a>
+                    <a class="contact-social-link" href="" aria-label="Instagram: uliwrok"><span class="social-icon"><img src="/resources/instagram.svg" alt="" /></span><span>uliwrok</span></a>
+                </div>
             </div>
         </section>
     </main>
     <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/site.js"></script>
 </body>
 </html>
