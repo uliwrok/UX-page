@@ -1,5 +1,3 @@
-C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\bin\Debug\net8.0\appsettings.json
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\bin\Debug\net8.0\UX-Page.staticwebassets.runtime.json
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\bin\Debug\net8.0\UX-Page.staticwebassets.endpoints.json
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\bin\Debug\net8.0\UX-Page.exe
@@ -15,16 +13,18 @@ C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\UX-Page.MvcAppl
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\UX-Page.RazorAssemblyInfo.cache
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\UX-Page.RazorAssemblyInfo.cs
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\UX-Page.sourcelink.json
-C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\scopedcss\bundle\UX-Page.styles.css
-C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\scopedcss\projectbundle\UX-Page.bundle.scp.css
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\UX-Page.dll
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\refint\UX-Page.dll
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\UX-Page.pdb
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\UX-Page.genruntimeconfig.cache
 C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\ref\UX-Page.dll
+C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\wroks\Documents\GitHub\UX-page\UX-Page\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

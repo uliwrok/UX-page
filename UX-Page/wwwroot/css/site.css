@@ -1,22 +1,54 @@
 html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
-  margin-bottom: 60px;
+    isolation: isolate;
+    background-color: #212F40;
+    color: #fff;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: url("/resources/Pattern.png");
+    background-repeat: repeat;
+    background-size: 520px auto;
+    animation: pattern-drift 40s linear infinite;
+}
+
+header {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 10;
+    background-color: #212f40e6;
+}
+
+.portfolio-section {
+    min-height: 100vh;
+    min-height: 100dvh;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+    padding-block: 8rem 3rem;
+}
+
+@keyframes pattern-drift {
+    from { background-position: 0 0; }
+    to { background-position: 520px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+        scroll-snap-type: none;
+    }
+
+    body::before {
+        animation: none;
+    }
 }

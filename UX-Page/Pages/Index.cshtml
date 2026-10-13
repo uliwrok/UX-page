@@ -1,10 +1,60 @@
-﻿@page
-@model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@page
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio personal de desarrollo web y diseño UX." />
+    <title>Portafolio | Web Developer &amp; UX Designer</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <a class="visually-hidden-focusable" href="#inicio">Ir al contenido</a>
+    <header class="border-bottom border-secondary">
+        <nav class="container d-flex flex-wrap align-items-center justify-content-between gap-2 py-3" aria-label="Navegación principal">
+            <a class="fw-bold text-white text-decoration-none" href="#inicio">Mi portafolio</a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#sobre-mi">Sobre mí</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="portfolio-section" aria-labelledby="inicio-titulo">
+            <div class="container">
+                <p class="text-uppercase text-white-50">Desarrollo web · Diseño UX</p>
+                <h1 id="inicio-titulo" class="display-3 fw-bold">Web Developer<br />&amp; UX Designer</h1>
+                <p class="lead mt-4">Un espacio para compartir mis páginas web y mi proceso de diseño.</p>
+                <a class="btn btn-outline-light mt-3" href="#proyectos">Explorar proyectos</a>
+            </div>
+        </section>
+        <section id="sobre-mi" class="portfolio-section" aria-labelledby="sobre-mi-titulo">
+            <div class="container">
+                <h2 id="sobre-mi-titulo" class="display-5 fw-bold">Sobre mí</h2>
+                <p class="lead">El perfil detrás de los proyectos.</p>
+                <p class="text-white-50">Aquí compartiré mi trayectoria, habilidades y enfoque de trabajo.</p>
+            </div>
+        </section>
+        <section id="proyectos" class="portfolio-section" aria-labelledby="proyectos-titulo">
+            <div class="container">
+                <h2 id="proyectos-titulo" class="display-5 fw-bold">Proyectos</h2>
+                <p class="lead">Páginas web y experiencias digitales.</p>
+                <div class="border rounded p-4 mt-4">
+                    <p class="mb-0 text-white-50">Próximamente: proyectos, capturas y enlaces a cada sitio.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="portfolio-section" aria-labelledby="contacto-titulo">
+            <div class="container">
+                <h2 id="contacto-titulo" class="display-5 fw-bold">Contacto</h2>
+                <p class="lead">Conversemos sobre tu próximo proyecto.</p>
+                <p class="mb-0">Próximamente: correo electrónico y perfiles profesionales.</p>
+            </div>
+        </section>
+    </main>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

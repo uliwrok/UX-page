@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UX-Page")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c8a87adce1938fd68a50728cb085ccc48793566")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7173eaab54a5878eed688a6dc3425bfbe9c5d544")]
 [assembly: System.Reflection.AssemblyProductAttribute("UX-Page")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UX-Page")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
