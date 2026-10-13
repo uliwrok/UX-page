@@ -17,6 +17,7 @@ wwwroot\resources\Bootstrap-Icons-LICENSE.txt
 wwwroot\resources\contact-email.svg
 wwwroot\resources\contact-fish.png
 wwwroot\resources\contact-phone.svg
+wwwroot\resources\contact-wave.svg
 wwwroot\resources\figma-pattern.png
 wwwroot\resources\hero-fish.png
 wwwroot\resources\hover-arrow.svg
@@ -28,4 +29,3 @@ wwwroot\resources\Page3.png
 wwwroot\resources\Page4.png
 wwwroot\resources\Pattern.png
 wwwroot\css\site.css
-wwwroot\resources\contact-wave.svg
