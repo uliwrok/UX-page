@@ -14,8 +14,13 @@ updateMenu();
 const projectPanels = document.querySelectorAll(".project-panel");
 
 for (const panel of projectPanels) {
-    panel.addEventListener("pointerenter", () => panel.setAttribute("aria-expanded", "true"));
-    panel.addEventListener("pointerleave", () => panel.setAttribute("aria-expanded", String(panel.classList.contains("is-open"))));
+    panel.addEventListener("pointerenter", event => {
+        if (window.matchMedia("(hover: hover) and (max-width: 767.98px)").matches) {
+            for (const other of projectPanels) other.classList.toggle("is-preview", other === panel);
+        }
+        panel.setAttribute("aria-expanded", "true");
+    });
+    panel.addEventListener("pointerleave", () => panel.setAttribute("aria-expanded", String(panel.classList.contains("is-open") || panel.classList.contains("is-preview"))));
     panel.addEventListener("focus", () => panel.setAttribute("aria-expanded", "true"));
     panel.addEventListener("blur", () => {
         panel.classList.remove("is-open");
@@ -33,3 +38,10 @@ for (const panel of projectPanels) {
         if (event.key === "Escape") panel.blur();
     });
 }
+
+document.querySelector(".project-gallery").addEventListener("pointerleave", () => {
+    for (const panel of projectPanels) {
+        panel.classList.remove("is-preview");
+        panel.setAttribute("aria-expanded", String(panel.classList.contains("is-open") || panel.matches(":focus-visible")));
+    }
+});

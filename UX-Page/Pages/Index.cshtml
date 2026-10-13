@@ -1,4 +1,5 @@
 @page
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,13 +8,13 @@
     <meta name="description" content="Portafolio personal de desarrollo web y diseño UX." />
     <title>Jesús Ulises | UX Designer &amp; Web Developer</title>
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="stylesheet" href="/css/site.css" asp-append-version="true" />
 </head>
 <body>
     <a class="visually-hidden-focusable" href="#inicio">Ir al contenido</a>
     <header class="portfolio-header">
         <nav aria-label="Navegación principal">
-            <ul class="hero-nav">
+            <ul class="hero-nav d-flex justify-content-center align-items-center">
                 <li><a href="#sobre-mi">ABOUT</a></li>
                 <li aria-hidden="true">/</li>
                 <li><a href="#proyectos">WORK</a></li>
@@ -29,30 +30,30 @@
                 <p>UX Designer / Web Developer</p>
             </div>
             <a class="hero-scroll" href="#sobre-mi" aria-label="Scroll Down: ir a Sobre mí">
-                <img class="hero-fish" src="/resources/hero-fish.png" alt="" width="483" height="212" />
+                <img class="hero-fish img-fluid" src="/resources/hero-fish.png" alt="" width="483" height="212" />
                 <span class="hero-scroll-label">Scroll Down<span class="hero-scroll-arrow" aria-hidden="true">V</span></span>
             </a>
         </section>
         <section id="sobre-mi" class="portfolio-section about" aria-labelledby="sobre-mi-titulo">
-            <div class="about-grid">
-                <figure class="about-figure">
-                    <img src="/resources/balandra.png" alt="El hongo de Balandra ilustrado en amarillo" width="642" height="557" />
+            <div class="about-grid row g-0">
+                <figure class="about-figure col-12 col-md-6 order-2 order-md-1">
+                    <img class="img-fluid" src="/resources/balandra.png" alt="El hongo de Balandra ilustrado en amarillo" width="642" height="557" />
                     <figcaption>Balandra, La Paz B.C.S.</figcaption>
                 </figure>
-                <div class="about-copy" lang="en">
+                <div class="about-copy col-12 col-md-6 order-1 order-md-2" lang="en">
                     <h2 id="sobre-mi-titulo">About Me</h2>
                     <p>Experience Design leader with a rich synthesis of digital ecosystems, physical products and emerging technologies.</p>
                     <p>Driven by a deep commitment to human-centred principles, I define problem spaces and translate ambiguity into future-facing concepts. I explore Speculative Design with a pragmatic, hands-on mentality</p>
                 </div>
             </div>
-            <a class="about-work" href="#proyectos" aria-label="Work: ir a Proyectos">Work<span aria-hidden="true">V</span></a>
+            <a class="about-work d-none d-md-flex" href="#proyectos" aria-label="Work: ir a Proyectos">Work<span aria-hidden="true">V</span></a>
         </section>
         <section id="proyectos" class="portfolio-section projects" aria-labelledby="proyectos-titulo">
             <h2 id="proyectos-titulo" lang="en">My Work</h2>
             <p class="projects-subtitle" lang="en">Just a taste of my design and development experience</p>
-            <div class="project-gallery" aria-label="Ejemplos de proyectos">
+            <div class="project-gallery d-flex flex-column flex-md-row" aria-label="Ejemplos de proyectos">
                 <div class="projects-hint" aria-hidden="true">
-                    <img src="/resources/hover-arrow.svg" alt="" />
+                    <picture><source media="(max-width: 767.98px)" srcset="/resources/hover-arrow-mobile.svg" /><img src="/resources/hover-arrow.svg" alt="" /></picture>
                     <span>Hover</span>
                 </div>
                 <button class="project-panel" type="button" aria-label="Ver Project manager" aria-expanded="false">
@@ -87,14 +88,14 @@
                     <span lang="en">English Resume</span>
                     <span>Curriculum Español</span>
                 </div>
-                <div class="contact-socials">
-                    <a class="contact-social-link" href="" aria-label="LinkedIn"><span class="social-icon"><img src="/resources/linkedin.svg" alt="" /></span></a>
-                    <a class="contact-social-link" href="" aria-label="Instagram: uliwrok"><span class="social-icon"><img src="/resources/instagram.svg" alt="" /></span><span>uliwrok</span></a>
+                <div class="contact-socials d-flex flex-row flex-md-column justify-content-center">
+                    <a class="contact-social-link order-2 order-md-1" href="" aria-label="LinkedIn"><span class="social-icon"><img src="/resources/linkedin.svg" alt="" /></span></a>
+                    <a class="contact-social-link order-1 order-md-2" href="" aria-label="Instagram: uliwrok"><span class="social-icon"><img src="/resources/instagram.svg" alt="" /></span><span class="d-none d-md-inline">uliwrok</span></a>
                 </div>
             </div>
         </section>
     </main>
     <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/site.js"></script>
+    <script src="/js/site.js" asp-append-version="true"></script>
 </body>
 </html>
